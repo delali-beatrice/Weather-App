@@ -62,6 +62,16 @@ locationBtn.addEventListener("click", async() => {
 //weather details for popular cities
 const popularCities = document.querySelectorAll(".city-chip");
 
+popularCities.forEach(async (chip) => {
+    const city = chip.dataset.city;
+    const data = await getWeatherData(city);
+
+    if(data) {
+        const icon = chip.querySelector(".chip-icon");
+        icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    }
+});
+
 popularCities.forEach((cityBtn) => {
     cityBtn.addEventListener("click", async () => {
         const city = cityBtn.dataset.city;
@@ -76,6 +86,7 @@ popularCities.forEach((cityBtn) => {
             showError("City not found.")
         } else {
             displayWeatherData(data);
+            
             setLastWeatherData(data);
         }
     })

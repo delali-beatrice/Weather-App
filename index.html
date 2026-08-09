@@ -52,21 +52,6 @@
       Use my location
     </button>
 
-    <section class="popular-block">
-      <p class="popular-title">
-        <i class="fa-solid fa-earth-americas"></i>
-         Popular destinations
-      </p>
-      <p class="popular-sub">Check weather in popular cities</p>
-
-      <div class="city-chips">
-        <button type="button" class="city-chip" data-city="Accra">🌤️ Accra</button>
-        <button type="button" class="city-chip" data-city="London">☁️ London</button>
-        <button type="button" class="city-chip" data-city="New York">⛅ New York</button>
-        <button type="button" class="city-chip" data-city="Tokyo">🌧️ Tokyo</button>
-      </div>
-    </section>
-
     <!-- Loading state -->
     <div id="loading" class="state-message hidden">
       <p>Fetching the skies over your city...</p>
@@ -105,20 +90,60 @@
 
       <div class="card-details">
         <div class="detail">
+          <i class="fa-solid fa-droplet"></i>
           <span class="detail-label">Humidity</span>
           <span id="humidity" class="detail-value">--%</span>
         </div>
         <div class="detail">
+          <i class="fa-solid fa-wind"></i>
           <span class="detail-label">Wind</span>
           <span id="wind" class="detail-value">-- km/h</span>
         </div>
         <div class="detail">
+          <i class="fa-solid fa-temperature-arrow-down"></i>
           <span class="detail-label">Feels like</span>
           <span id="feels-like" class="detail-value">--°</span>
         </div>
       </div>
 
     </section>
+
+    <section class="popular-block">
+      <p class="popular-title">
+        <i class="fa-solid fa-earth-americas"></i>
+         Popular destinations
+      </p>
+      <p class="popular-sub">Check weather in popular cities</p>
+
+      <div class="city-chips">
+        <button type="button" class="city-chip" data-city="Accra">
+          <img src="" alt="" class="chip-icon">
+          Accra
+        </button>
+        <button type="button" class="city-chip" data-city="London">
+          <img src="" alt="" class="chip-icon">
+           London
+        </button>
+        <button type="button" class="city-chip" data-city="New York">
+          <img src="" alt="" class="chip-icon">
+           New York
+        </button>
+        <button type="button" class="city-chip" data-city="Tokyo">
+          <img src="" alt="" class="chip-icon">
+           Tokyo
+        </button>
+      </div>
+    </section>
+
+    <section class="favorites-block">
+      <p class="favorites-title">
+        <i class="fa-solid fa-star"></i>
+         Your Favorites
+      </p>
+      <div class="favorite-chips" id="favorite-chips">
+        <!-- filled in by JavaScript -->
+      </div>
+    </section>    
 
     <section class="features-block">
       <div class="feature">

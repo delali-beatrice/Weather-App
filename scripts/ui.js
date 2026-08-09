@@ -13,7 +13,7 @@ export function displayWeatherData(data) {
     cityElement.textContent = data.name;
     const currentDate = new Date();
     dateElement.textContent = currentDate.toDateString();
-    iconElement.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    iconElement.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     tempElement.textContent = `${Math.round(data.main.temp)}°C`;
     humidityElement.textContent = `${data.main.humidity}%`;
     windElement.textContent = `${data.wind.speed}m/s`;
