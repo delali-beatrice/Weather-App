@@ -23,6 +23,7 @@ export function displayWeatherData(data) {
 
 export function showLoading() {
     document.getElementById("loading").classList.remove("hidden");
+    document.getElementById("weather-card").classList.add("hidden");
 }
 
 export function hideLoading() {
@@ -34,6 +35,7 @@ export function showError(message) {
     errorElement.textContent = message;
     
     document.getElementById("error").classList.remove("hidden");
+    document.getElementById("weather-card").classList.add("hidden");
 }
 
 export function hideError() {

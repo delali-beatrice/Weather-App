@@ -42,11 +42,11 @@ export function updateTemperatureDisplay(unit) {
 celsiusBtn.addEventListener("click", () => {
     updateTemperatureDisplay("C");
     celsiusBtn.classList.add("active");
-    celsiusBtn.classList.remove("active");
+    fahrenheitBtn.classList.remove("active");
 });
 
 fahrenheitBtn.addEventListener("click", () => {
     updateTemperatureDisplay("F");
     fahrenheitBtn.classList.add("active");
-    fahrenheitBtn.classList.remove("active");
-})
+    celsiusBtn.classList.remove("active");
+});
