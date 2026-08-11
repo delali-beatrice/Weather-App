@@ -243,9 +243,8 @@ body {
 }
 
 .city-chips {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   width: 100%;
 }
@@ -261,7 +260,7 @@ body {
   color: var(--text-on-sky);
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   text-align: left;
   transition: background 0.2s ease;
@@ -273,8 +272,8 @@ body {
 }
 
 .chip-icon {
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  height: 35px;
 }
 
 /* ===== State messages (loading / error) ===== */
@@ -466,4 +465,16 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
+
+  .city-chips{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .chip-icon{
+    width: 24px;
+    height: 24px;
+  }
+
 }

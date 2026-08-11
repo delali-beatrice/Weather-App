@@ -48,5 +48,5 @@ celsiusBtn.addEventListener("click", () => {
 fahrenheitBtn.addEventListener("click", () => {
     updateTemperatureDisplay("F");
     fahrenheitBtn.classList.add("active");
-    celsiusBtn.classList.remove("active");
+    celsiusBtn.classList.remove("active");z
 });

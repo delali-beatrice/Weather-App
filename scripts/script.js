@@ -44,7 +44,7 @@ locationBtn.addEventListener("click", async() => {
 
     try {
         const coords = await getCurrentCoords();
-        const data = await getWeatherDataByCoords(coords.latitude, coords.longtitude);
+        const data = await getWeatherDataByCoords(coords.latitude, coords.longitude);
         hideLoading();
 
         if(!data) {
